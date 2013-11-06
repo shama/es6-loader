@@ -1,0 +1,28 @@
+{
+  "name": "es6-module-loader",
+  "version": "0.1.0",
+  "description": "ES6 module loader for webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack-dev-server --config test/webpack.config.js"
+  },
+  "author": "Kyle Robinson Young <kyle@dontkry.com> (http://dontkry.com)",
+  "license": "MIT",
+  "dependencies": {
+    "loader-utils": "~0.2.1",
+    "es6-module-transpiler": "~0.3.3"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "~0.11.0",
+    "should": "~2.0.2",
+    "mocha": "~1.14.0",
+    "mocha-loader": "~0.6.3"
+  },
+  "keywords": [
+    "webpack",
+    "loader",
+    "es6",
+    "module",
+    "transpiler"
+  ]
+}
