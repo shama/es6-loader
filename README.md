@@ -14,7 +14,7 @@ export default Panda;
 ```
 
 ```js
-var panda = require('es6-module!./panda.js');
+var Panda = require('es6-module!./panda.js');
 ```
 
 Or within the webpack config:
