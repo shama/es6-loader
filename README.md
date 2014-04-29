@@ -1,10 +1,10 @@
-# es6-module-loader
+# es6-loader
 Transpiles ES6 modules for [webpack](https://github.com/webpack/webpack).
 
 ## Usage
 
 ```js
-import bamboo from 'es6-module!./bamboo.js';
+import bamboo from 'es6!./bamboo.js';
 
 function Panda() {
   this.eat = bamboo;
@@ -14,7 +14,7 @@ export default Panda;
 ```
 
 ```js
-var Panda = require('es6-module!./panda.js');
+var Panda = require('es6!./panda.js');
 ```
 
 Or within the webpack config:
@@ -22,7 +22,7 @@ Or within the webpack config:
 ```js
 module: {
   loaders: [
-    { test: /\.js$/, loader: 'es6-module-loader' }
+    { test: /\.js$/, loader: 'es6-loader' }
   ]
 }
 ```
@@ -35,7 +35,7 @@ import bamboo from './bamboo.js';
 
 ## Install
 
-`npm install es6-module-loader --save-dev`
+`npm install es6-loader --save-dev`
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style.
@@ -44,5 +44,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 * 0.1.0 - Initial release
 
 ## License
-Copyright (c) 2014 Kyle Robinson Young
+Copyright (c) 2014 Kyle Robinson Young  
 Licensed under the MIT license.

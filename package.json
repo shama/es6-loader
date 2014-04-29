@@ -1,13 +1,28 @@
 {
-  "name": "es6-module-loader",
+  "name": "es6-loader",
   "version": "0.1.0",
   "description": "ES6 module loader for webpack",
   "main": "index.js",
   "scripts": {
     "test": "webpack-dev-server --config test/webpack.config.js"
   },
-  "author": "Kyle Robinson Young <kyle@dontkry.com> (http://dontkry.com)",
-  "license": "MIT",
+  "author": {
+    "name": "Kyle Robinson Young",
+    "email": "kyle@dontkry.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shama/es6-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shama/es6-loader/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/shama/es6-loader/blob/master/LICENSE-MIT"
+    }
+  ],
   "dependencies": {
     "loader-utils": "~0.2.1",
     "es6-module-transpiler": "~0.3.3"
@@ -24,5 +39,9 @@
     "es6",
     "module",
     "transpiler"
+  ],
+  "files": [
+    "index.js",
+    "LICENSE-MIT"
   ]
 }
