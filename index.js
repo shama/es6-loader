@@ -29,7 +29,13 @@ function es6Transpiler(source, options) {
         includePolyfills: false
     };
 
-    return es6tr.run(merge(options, defaults)).src;
+    var result = es6tr.run(merge(options, defaults));
+    
+    if(result.errors.length) {
+        return source;
+    }
+    
+    return result.src;
 }
 
 module.exports = function (source) {
