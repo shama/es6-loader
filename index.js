@@ -1,6 +1,6 @@
 var loaderUtils = require('loader-utils');
 var path = require('path');
-var merge = require('merge');
+var extend = require('extend');
 
 var es6mod = require('es6-module-transpiler').Compiler;
 var es6tr = require("es6-transpiler");
@@ -29,7 +29,7 @@ function es6Transpiler(source, options) {
         includePolyfills: false
     };
 
-    var result = es6tr.run(merge(options, defaults));
+    var result = es6tr.run(extend({}, defaults, options));
     
     if(result.errors.length) {
         return source;
