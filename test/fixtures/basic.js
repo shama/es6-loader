@@ -1,7 +1,9 @@
 import test from '../../!./test.js';
 
-function app() {
-  return test;
+class app {
+    constructor(name='test') {
+        return test;
+    }
 }
 
 export default app;
