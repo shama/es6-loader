@@ -44,6 +44,7 @@ import bamboo from './bamboo.js';
 In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
+* 0.2.0 - Using `es6-module-transpiler` and `es6-transpiler` to transpile ES6 syntax as well as modules (@jtangelder).
 * 0.1.0 - Initial release
 
 ## License
