@@ -1,9 +1,9 @@
 import test from '../../!./test.js';
 
-class app {
-    constructor(name='test') {
-        return test;
-    }
+class App {
+  constructor(arg='test') {
+    this.result = arg + test;
+  }
 }
 
-export default app;
+export default App;
