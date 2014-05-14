@@ -1,20 +1,23 @@
 # es6-loader
-Transpiles ES6 modules for [webpack](https://github.com/webpack/webpack).
+Transpiles ES6 syntax for [webpack](https://github.com/webpack/webpack).
 
 ## Usage
 
 ```js
 import bamboo from 'es6!./bamboo.js';
 
-function Panda() {
-  this.eat = bamboo;
+class Panda {
+  constructor(arg='default') {
+    this.eat = bamboo;
+  }
 }
 
 export default Panda;
 ```
 
 ```js
-var Panda = require('es6!./panda.js');
+var Panda = require('es6!./panda.js').default;
+new Panda().eat();
 ```
 
 Or within the webpack config:
