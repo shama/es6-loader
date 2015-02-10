@@ -1,3 +1,5 @@
+## DEPRECATED: Please use a more up to date transpiler, such as (6to5-loader)[https://github.com/6to5/6to5-loader].
+
 # es6-loader
 Transpiles ES6 syntax for [webpack](https://github.com/webpack/webpack).
 
